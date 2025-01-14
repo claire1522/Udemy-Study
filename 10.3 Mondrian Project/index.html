@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .contain-container{
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container{
+      height: 748px;
+      width: 748px;
+      gap: 0px;
+    
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .red {
+      background-color: #E72F24;
+      border-style: solid;
+      border-width: 0px 9px 9px 0px;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    #row-gap {
+      border-style: solid;
+      border-width: 0px 0px 9px 0px;
+    }
+
+    .white.box.column {
+      border-style: solid;
+      border-width: 0px 9px 0px 0px;
+    }
+
+    .third {
+      border-style: solid;
+      border-width: 0px 9px 9px 0px;
+    }
+
+    .ten {
+      border-style: solid;
+      border-width: 0px 0px 0px 9px;
+    }
+
+    .eleven {
+      border-style: solid;
+      border-width: 0px 9px 0px 0px;
+    }
+
+    .twelve {
+      border-style: solid;
+      border-width: 0px 0px 0px 9px;
+    }
+
+    .yellow {
+      background-color: #fed818;
+    }
+
+    .black {
+      background-color: #232629;
+      border-style: solid;
+      border-width: 0px 9px 0px 9px;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-style: solid;
+      border-width: 0px 0px 19px 9px; 
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="contain-container">
+    <div class="container">
+      <div class="red box"></div>
+      <div class="white box" id="row-gap"></div>
+      <div class="white box" id="row-gap"></div>
+      <div class="white box" id="row-gap"></div>
+
+      <div class="white box column"></div>
+      <div class="white box five"></div>
+      <div class="white box six"></div>
+      <div class="blue box"></div>
+      
+      <div class="white box third"></div>
+      <div class="white box" id="row-gap"></div>
+      <div class="white box" id="row-gap"></div>
+      <div class="white box ten"></div>
+
+      <div class="white box eleven"></div>
+      <div class="yellow box"></div>
+      <div class="black box"></div>
+      <div class="white box twelve"></div>
+    </div>
+  </div>
+</body>
+
+</html>
